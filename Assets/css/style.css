@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(30, 30, 30);
+}
+
+.card-img{
+    height: 10rem;
+    width: 50%;
+    border-radius: 0;
+    margin: 2rem auto;
+}
+
+.card-q{
+    font-size: 2rem;
+    font-family: "High Tower Text";
+    text-align: center;
+}
+
+.bg-cust{
+    color: white;
+    background-color: rgb(30, 30, 30);
+}
+
+.center{
+    transform: translate(-30px,-30px);
+}
+
+.nav-icon{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    object-fit: cover;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button, nav button span{
+    width: 50px;
+    height: 35px;
+    background-color: white !important;
+}
+
+section{
+    height: 70vh;
+}
+
+div .contain{
+    width: 150px;
+    height: 150px;
+}
+
+ul li{
+    padding: 1rem !important;
+}
+
+.animated-text{
+    font-size: 36px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text .span2{
+    position: relative;
+}
+
+.animated-text .span2::before{
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text .span2::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 110%;
+    background-color: rgb(30, 30, 30);
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "YouTuber.";
+    }
+    21%,40%{
+        content: "Blogger.";
+    }
+    41%,60%{
+        content: "Developer.";
+    }
+    61%,80%{
+        content: "Designer.";
+    }
+    81%,100%{
+        content: "Gamer.";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
